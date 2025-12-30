@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;800&family=Inter:wght@400;700;900&display=swap');
+
+:root {
+    --pro-red: #ef4444;    /* Connected Color */
+    --pro-green: #10b981;  /* Disconnected Color */
+    --dark-slate: #0f172a;
+    --glass-bg: rgba(255, 255, 255, 0.95);
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #cbd5e1;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.dashboard-wrapper {
+    height: 100vh;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+/* Minimalist Welcome Header */
+.welcome-header {
+    margin-bottom: 20px;
+}
+
+.welcome-sub {
+    margin: 0;
+    font-size: 1rem;
+    color: #64748b;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.welcome-main {
+    margin: 0;
+    font-size: 2.8rem;
+    color: var(--dark-slate);
+    font-weight: 900;
+    letter-spacing: -1.5px;
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.panel {
+    background: var(--glass-bg);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border: 1px solid #e2e8f0;
+}
+
+.panel-header { 
+    font-family: 'JetBrains Mono'; 
+    font-size: 0.8rem; 
+    color: #94a3b8; 
+    margin-bottom: 15px; 
+    border-bottom: 1px solid #f1f5f9; 
+    padding-bottom: 5px; 
+}
+
+.image-frame {
+    flex-grow: 1;
+    background: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#item-image { max-width: 100%; max-height: 100%; object-fit: contain; }
+
+.panel-footer { margin-top: 15px; }
+
+/* Connection Status Card */
+.value-card {
+    padding: 50px 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.4s ease;
+    margin-bottom: 15px;
+}
+
+.red-theme { background: var(--pro-red); color: white; box-shadow: 0 10px 20px rgba(239, 68, 68, 0.4); }
+.green-theme { background: var(--pro-green); color: white; box-shadow: 0 10px 20px rgba(16, 185, 129, 0.4); }
+
+.big-value { font-family: 'JetBrains Mono'; font-size: 6.5rem; font-weight: 800; }
+
+/* Large Metric Boxes */
+.data-list { 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 12px; 
+}
+
+.data-item { 
+    background: #f8fafc; 
+    padding: 18px 25px; 
+    border-radius: 12px; 
+    border: 1px solid #e2e8f0; 
+}
+
+.label { 
+    display: block; 
+    font-size: 0.8rem; 
+    color: #64748b; 
+    text-transform: uppercase; 
+    font-weight: 700; 
+    margin-bottom: 5px; 
+}
+
+.data-text-xl { 
+    font-weight: 800; 
+    font-size: 2.4rem; 
+    color: var(--dark-slate); 
+    display: block;
+    line-height: 1.1;
+}
+
+.data-text { font-size: 0.95rem; color: #475569; font-weight: 500; margin: 5px 0 0 0; }

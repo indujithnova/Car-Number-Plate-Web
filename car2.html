@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polymath Command Center</title>
+    <link rel="icon" href="Logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="car2.css">
+</head>
+<body>
+
+    <div class="dashboard-wrapper">
+        <header class="welcome-header">
+            <p class="welcome-sub">Welcome</p>
+            <h1 class="welcome-main">Polymath College</h1>
+        </header>
+
+        <main class="grid-container">
+            <div class="panel visual-panel">
+                <div class="panel-header">LIVE VISUALIZATION</div>
+                <div class="image-frame">
+                    <img id="item-image" src="" alt="Live Feed Asset">
+                </div>
+                <div class="panel-footer">
+                    <span class="label">System Metadata</span>
+                    <p id="item-description" class="data-text">Waiting for connection...</p>
+                </div>
+            </div>
+
+            <div class="panel metrics-panel">
+                <div id="highlight-box" class="value-card green-theme">
+                    <span class="card-label">Primary Metric</span>
+                    <div id="highlight-value" class="big-value">--</div>
+                </div>
+
+                <div class="data-list">
+                    <div class="data-item">
+                        <span class="label">Vehicle Number Plate</span>
+                        <span id="item-name" class="data-text-xl">Scanning...</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Punctual</span>
+                        <span id="punctual-count" class="data-text-xl">0</span>
+                    </div>
+                    <div class="data-item">
+                        <span class="label">Delayed entries</span>
+                        <span id="delayed-count" class="data-text-xl">0</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="car2.js"></script>
+</body>
+</html>
