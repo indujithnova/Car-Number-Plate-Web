@@ -8,12 +8,28 @@
     <link rel="stylesheet" href="car2.css">
 </head>
 <body>
-
+   
     <div class="dashboard-wrapper">
-        <header class="welcome-header">
-            <p class="welcome-sub">Welcome</p>
-            <h1 class="welcome-main">Polymath College</h1>
+        <header class="top-header">
+            <div class="header-left">
+                <img src="iti-logo.png" alt="ITI Logo" class="header-logo-left">
+            </div>
+
+            <div class="header-center">
+                <h1 class="header-title">ITI WITH POLYMATH</h1>
+                <p class="header-subtitle">Innovative Thinking &amp; Implementation</p>
+                <div class="header-pill">
+                    <span class="pill-dot"></span>
+                    <span class="pill-text">Car detection System</span>
+                    <span class="pill-dot"></span>
+                </div>
+            </div>
+
+            <div class="header-right">
+                <img src="Logo2.png" alt="Polymath College Logo" class="header-logo-right">
+            </div>
         </header>
+
 
         <main class="grid-container">
             <div class="panel visual-panel">
@@ -29,7 +45,7 @@
 
             <div class="panel metrics-panel">
                 <div id="highlight-box" class="value-card green-theme">
-                    <span class="card-label">Primary Metric</span>
+                    <span class="card-label">Status</span>
                     <div id="highlight-value" class="big-value">--</div>
                 </div>
 
@@ -39,11 +55,11 @@
                         <span id="item-name" class="data-text-xl">Scanning...</span>
                     </div>
                     <div class="data-item">
-                        <span class="label">Punctual</span>
+                        <span class="label">Early count</span>
                         <span id="punctual-count" class="data-text-xl">0</span>
                     </div>
                     <div class="data-item">
-                        <span class="label">Delayed entries</span>
+                        <span class="label">Late count</span>
                         <span id="delayed-count" class="data-text-xl">0</span>
                     </div>
                 </div>
